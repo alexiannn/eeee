@@ -293,9 +293,9 @@ RS.RenderStepped:Connect(function()
 			if getgenv().AlexPrivate.AimAssist.UseShake then
 				local Main = CFrame.new(Camera.CFrame.p,Plr.Character[getgenv().AlexPrivate.AimAssist.Part].Position + Plr.Character[getgenv().AlexPrivate.AimAssist.Part].Velocity * getgenv().AlexPrivate.AimAssist.Prediction +
 				Vector3.new(
-					math.random(-getgenv().AlexPrivate.AimAssist.Shake, getgenv().AdrianPrivate.AimAssist.Shake),
-					math.random(-getgenv().AlexPrivate.AimAssist.Shake, getgenv().AdrianPrivate.AimAssist.Shake),
-					math.random(-getgenv().AlexPrivate.AimAssist.Shake, getgenv().AdrianPrivate.AimAssist.Shake)
+					math.random(-getgenv().AlexPrivate.AimAssist.Shake, getgenv().AlexPrivate.AimAssist.Shake),
+					math.random(-getgenv().AlexPrivate.AimAssist.Shake, getgenv().AlexPrivate.AimAssist.Shake),
+					math.random(-getgenv().AlexPrivate.AimAssist.Shake, getgenv().AlexPrivate.AimAssist.Shake)
 				) * 0.1)
 				Camera.CFrame = Camera.CFrame:Lerp(Main, getgenv().AlexPrivate.AimAssist.Smoothness, Enum.EasingStyle.Elastic, Enum.EasingDirection.InOut, Enum.EasingStyle.Sine, Enum.EasingDirection.Out)
 			else
@@ -306,11 +306,11 @@ RS.RenderStepped:Connect(function()
 			if getgenv().AlexPrivate.AimAssist.UseShake then
 				local Main = CFrame.new(Camera.CFrame.p,Plr.Character[getgenv().AlexPrivate.AimAssist.Part].Position +
 				Vector3.new(
-					math.random(-getgenv().AlexPrivate.AimAssist.Shake, getgenv().AdrianPrivate.AimAssist.Shake),
-					math.random(-getgenv().AAlexPrivate.AimAssist.Shake, getgenv().AdrianPrivate.AimAssist.Shake),
-					math.random(-getgenv().AlexPrivate.AimAssist.Shake, getgenv().AdrianPrivate.AimAssist.Shake)
+					math.random(-getgenv().AlexPrivate.AimAssist.Shake, getgenv().AlexPrivate.AimAssist.Shake),
+					math.random(-getgenv().AlexPrivate.AimAssist.Shake, getgenv().AlexPrivate.AimAssist.Shake),
+					math.random(-getgenv().AlexPrivate.AimAssist.Shake, getgenv().AlexPrivate.Assist.Shake)
 				) * 0.1)
-				Camera.CFrame = Camera.CFrame:Lerp(Main, getgenv().AAlexPrivate.AimAssist.Smoothness, Enum.EasingStyle.Elastic, Enum.EasingDirection.InOut, Enum.EasingStyle.Sine, Enum.EasingDirection.Out)
+				Camera.CFrame = Camera.CFrame:Lerp(Main, getgenv().AlexPrivate.AimAssist.Smoothness, Enum.EasingStyle.Elastic, Enum.EasingDirection.InOut, Enum.EasingStyle.Sine, Enum.EasingDirection.Out)
 		    else
     			local Main = CFrame.new(Camera.CFrame.p,Plr.Character[getgenv().AlexPrivate.AimAssist.Part].Position)
     			Camera.CFrame = Camera.CFrame:Lerp(Main, getgenv().AlexPrivate.AimAssist.Smoothness, Enum.EasingStyle.Elastic, Enum.EasingDirection.InOut, Enum.EasingStyle.Sine, Enum.EasingDirection.Out)
